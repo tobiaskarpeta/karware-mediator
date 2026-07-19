@@ -17,6 +17,12 @@ The library supports:
 
 Reference the `Karware.Mediator` project or package from your application. The library itself does not add a dependency-injection container; use the container already configured by your application, such as `Microsoft.Extensions.DependencyInjection`.
 
+To install the package from NuGet, run:
+
+```bash
+dotnet add package Karware.Mediator
+```
+
 ## Usage
 
 Define a request and its handler. A request without a response implements `IRequest`:
