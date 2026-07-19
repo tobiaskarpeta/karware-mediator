@@ -4,12 +4,33 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Karware.Mediator</PackageId>
+    <Authors>Tobias Karpeta</Authors>
+    <Description>A small mediator implementation for .NET applications that dispatches requests to their handlers through IServiceProvider.</Description>
+    <PackageTags>mediator;mediator-pattern;dependency-injection;dotnet</PackageTags>
+    <PackageProjectUrl>https://github.com/tobiaskarpeta/karware-mediator</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tobiaskarpeta/karware-mediator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <Deterministic>true</Deterministic>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Core\**" />
     <EmbeddedResource Remove="Core\**" />
     <None Remove="Core\**" />
+    <None Include="..\README.md" Pack="true" PackagePath="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
