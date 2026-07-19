@@ -1,6 +1,0 @@
-<Solution>
-  <Folder Name="/Tests/">
-    <Project Path="../tests/Karware.Mediator.Tests/Karware.Mediator.Tests.csproj" />
-  </Folder>
-  <Project Path="Karware.Mediator.csproj" />
-</Solution>
